@@ -203,8 +203,8 @@ static void performance_benchmark(void) {
     printf(">> Results:\n");
     printf("   Tokens processed: %d\n", total_tokens);
     printf("   Time taken: %.6f seconds\n", time_taken);
-    printf("   Speed: %.0f tokens/second\n", tokens_per_sec);
-    printf("   Throughput: %.2f KB/second\n", (strlen(large_program) / 1024.0) / time_taken);
+    printf("   Speed: %.0f tokens/second\n", tokens_per_sec > 0 ? tokens_per_sec : 999999.0);
+    printf("   Throughput: %.2f KB/second\n", time_taken > 0 ? (strlen(large_program) / 1024.0) / time_taken : 999999.0);
     
     lexer_destroy(lexer);
     printf("\n");

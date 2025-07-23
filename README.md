@@ -113,10 +113,6 @@ This compiler was developed as a learning project to understand the fundamental 
 - **Error Handling:** Comprehensive diagnostics with line/column information
 - **Testing:** Built-in test suite and benchmarking tools
 
-## License
-
-This project is released under the MIT License. Feel free to study, modify, and learn from the code.
-
 ## Acknowledgments
 
 Built with a focus on educational value and clean implementation. The compiler demonstrates core concepts taught in computer science compiler courses while maintaining production-quality code standards.

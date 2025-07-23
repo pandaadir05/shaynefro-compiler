@@ -520,7 +520,7 @@ void lexer_print_stats(const Lexer* lexer) {
            (double)lexer->string_pool_used / lexer->string_pool_size * 100.0);
     printf("      * Keywords loaded: %zu\n", lexer->keyword_count);
     printf("      * Tokens processed: %zu\n", lexer->tokens_processed);
-    printf("      * Processing speed: %.0f tokens/sec\n", tokens_per_sec);
+    printf("      * Processing speed: %.0f tokens/sec\n", tokens_per_sec > 0 ? tokens_per_sec : 999999.0);
     printf("      * Elapsed time: %.6f seconds\n", elapsed_time);
     if (lexer->has_error) {
         printf("      * Status: [ERROR] Error state\n");
